@@ -1,0 +1,22 @@
+POST http://localhost:3000/add_lockTime HTTP/1.1
+content-type: application/json
+
+{
+    "name": "CEO",
+    "lockTime": "1634662800"
+}
+###
+POST http://localhost:3000/edit_lockTime HTTP/1.1
+content-type: application/json
+
+{
+    "_id": "616f9df178dace533c2c5a12",
+    "name": "test",
+    "lockTime": 54321
+}
+###
+GET http://localhost:3000/lockTime/CEO HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:3000/lockTime HTTP/1.1
+content-type: application/json
