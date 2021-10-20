@@ -42,4 +42,7 @@ app.get("/lockTime", async (req, response) => {
         response.status(500).send(error);
     }
 });
+app.get("/",(req,res)=>{
+    res.send('Chào mừng đến với trang của Đạt09')
+})
 module.exports = app;
