@@ -30,7 +30,7 @@ app.post("/delete_origin", async (request, response) => {
 app.post("/check_origin", async (req, response) => {
     try {
         const origin = await originLockModel.findOne({
-            domain: req.body.domain,
+            domain: atob(req.body.d),
         });
         if(!origin){
             throw 'origin not found!!!'
