@@ -13,11 +13,15 @@ app.post("/add_lockTime", async (request, response) => {
 app.post("/edit_lockTime", async (request, response) => {
     // const user = new lockTimeModel(request.body);
     const update = {
-        name:request.body.name,
-        lockTime:request.body.lockTime,
-    }
-    const user = await lockTimeModel.findByIdAndUpdate(request.body._id,update,{new: true});
-    
+        name: request.body.name,
+        lockTime: request.body.lockTime,
+    };
+    const user = await lockTimeModel.findByIdAndUpdate(
+        request.body._id,
+        update,
+        { new: true }
+    );
+
     try {
         await user.save();
         response.send(user);
@@ -42,7 +46,7 @@ app.get("/lockTime", async (req, response) => {
         response.status(500).send(error);
     }
 });
-app.get("/",(req,res)=>{
-    res.send('Chào mừng đến với trang của Đạt09')
-})
+app.get("/", (req, res) => {
+    res.send("Chào mừng đến với trang của Đạt09");
+});
 module.exports = app;

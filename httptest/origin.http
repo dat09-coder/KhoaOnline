@@ -1,0 +1,26 @@
+POST http://localhost:8080/add_origin HTTP/1.1
+Content-Type: application/json
+
+{
+    "domain":"http://45.118.145.201"
+}
+###
+POST http://localhost:8080/delete_origin HTTP/1.1
+Content-Type: application/json
+
+{
+   "_id": "620fc503a9ad583f6a7df393",
+    "domain": "http://45.118.145.204"
+}
+
+###
+GET http://localhost:8080/getall_origin HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:8080/check_origin HTTP/1.1
+Content-Type: application/json
+
+{
+    "domain": "http://45.118.145.204"
+}
