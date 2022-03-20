@@ -2,7 +2,7 @@ POST http://localhost:8080/add_origin HTTP/1.1
 Content-Type: application/json
 
 {
-    "domain":"http://45.118.145.201"
+    "domain":"http://localhost:4200"
 }
 ###
 POST http://localhost:8080/delete_origin HTTP/1.1

@@ -2,14 +2,14 @@ POST https://khoa-online.herokuapp.com/add_origin HTTP/1.1
 Content-Type: application/json
 
 {
-    "domain":"http://45.118.145.201"
+    "domain":"http://localhost:4201"
 }
 ###
 POST https://khoa-online.herokuapp.com/delete_origin HTTP/1.1
 Content-Type: application/json
 
 {
-   "_id": "620fc503a9ad583f6a7df393",
+   "_id": "620fd2e221689df5deeeb89f",
     "domain": "http://45.118.145.204"
 }
 
